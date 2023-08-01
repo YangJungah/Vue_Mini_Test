@@ -1,24 +1,48 @@
-# two
+Vue2 이용
+---
+One-> localhost:8080으로 주소 지정
+Two -> localhost:8081으로 주소 지정
 
 ## Project setup
 ```
-npm install
+const { defineConfig } = require('@vue/cli-service')
+module.exports = defineConfig({
+  devServer: {
+    port: 8080,
+  },
+  transpileDependencies: true
+})
+
 ```
 
-### Compiles and hot-reloads for development
+## 라우터 설정
 ```
-npm run serve
-```
+// router.js (또는 index.js 등)
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 
-### Compiles and minifies for production
-```
-npm run build
-```
+// Vue 컴포넌트를 import 합니다.
+import Home from './views/MainHome.vue';
+import About from './views/AboutUs.vue';
 
-### Lints and fixes files
-```
-npm run lint
-```
+Vue.use(VueRouter);
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+const router = new VueRouter({
+  mode: 'history',
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: Home,
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: About,
+    },
+  ],
+});
+
+export default router;
+
+```
