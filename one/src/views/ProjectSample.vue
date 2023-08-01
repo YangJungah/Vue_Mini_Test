@@ -1,9 +1,10 @@
 <template>
-  <div class="hello">
-    <h5>{{ msg }}</h5>
+  <div>
+    <h2>MFCS를 소개합니다 🎤</h2>
     <main>
     <div class="container px-4 py-5">
     <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+      
       <div class="d-flex flex-column align-items-start gap-2">
         <h3 class="fw-bold">복잡한 클라우드의 간결한 해답, <br>메타넷 MFCS </h3>
         <p class="text-muted">디지털 혁신의 기본 환경인 클라우드를 쉽게 만들고 빠르게 실행해보세요. <br>MFCS로 가능합니다! </p>
@@ -62,26 +63,10 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+
 }
 </script>
 
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+<style>
+
 </style>

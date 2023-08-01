@@ -1,6 +1,22 @@
 <template>
   <div>
-    <h1>여기는 localhost:8080 -> one 입니다</h1>
+    <h2>여기는 localhost:8080 -> one 입니다</h2>
+    <div>
+      <p>
+      1. component분리하기 ✌️
+    </p>
+    <p>
+      2. router사용해보기 ✌️
+    </p>
+    <p>
+      3. 프로젝트 두개 만들어서 iFrame시도해보기 ✌️
+    </p>
+    <p>
+      4. 위젯 써보기 😭
+    </p>
+    </div>
+
+    
   </div>
 </template>
 

@@ -9,6 +9,7 @@
       <ul class="nav nav-pills">
         <li class="nav-item"><router-link to="/" class="nav-link active" aria-current="page">Home</router-link></li>
         <li class="nav-item"><router-link to="/about" class="nav-link">AboutMe</router-link></li>
+        <li class="nav-item"><router-link to="/mfcs" class="nav-link">MFCS구경하기</router-link></li>
       </ul>
     </header>
   </div>
