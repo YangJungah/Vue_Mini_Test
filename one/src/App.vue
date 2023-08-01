@@ -3,6 +3,9 @@
     <MyNavbar/>
     <div>
       <router-view></router-view>
+      <div>
+        <iframe id="projectIframe" frameborder="0"></iframe>
+      </div>
     </div>
   </div>
 </template>

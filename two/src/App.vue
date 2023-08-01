@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <img alt="logo" src="./assets/metanet.jpg" style="width: 300px; height: auto;">
-    <HelloWorld msg="여기는 iFrame으로 불러온 localhost:8081입니다"/>
+    <HelloWorld msg="여기는 iFrame으로 불러온 localhost:8081의 내용입니다"/>
+    
   </div>
 </template>
 

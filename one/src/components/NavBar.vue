@@ -9,23 +9,15 @@
       <ul class="nav nav-pills">
         <li class="nav-item"><router-link to="/" class="nav-link active" aria-current="page">Home</router-link></li>
         <li class="nav-item"><router-link to="/about" class="nav-link">AboutMe</router-link></li>
-        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" @click="loadIframe">two불러오기</a></li>
       </ul>
     </header>
-    <router-view></router-view>
-    <iframe id="projectIframe" frameborder="0"></iframe>
   </div>
 </template>
 
 <script>
 export default {
   name: 'MyNavbar',
-  methods: {
-    loadIframe() {
-      const iframe = document.getElementById('projectIframe');
-      iframe.src = 'http://localhost:8081';
-    }
-  }
+ 
 }
 </script>
 
