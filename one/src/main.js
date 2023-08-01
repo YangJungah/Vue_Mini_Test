@@ -6,7 +6,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import router from './router';
 
 new Vue({
-  router, // Vue 인스턴스에 라우터 연결
+  router, 
   render: (h) => h(App),
 }).$mount('#app');
 
