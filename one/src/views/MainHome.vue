@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>여기는 localhost:8080 -> one 입니다</h2>
-    <div>
+    <div style="margin-top: 30px;">
       <p>
       1. component분리하기 ✌️
     </p>
