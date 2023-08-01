@@ -7,13 +7,12 @@
       </a>
 
       <ul class="nav nav-pills">
-        <!-- Vue Router 링크 -->
         <li class="nav-item"><router-link to="/" class="nav-link active" aria-current="page">Home</router-link></li>
         <li class="nav-item"><router-link to="/about" class="nav-link">AboutMe</router-link></li>
-        <!-- 일반 링크 (페이지 새로고침 방지) -->
-        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" @click="loadIframe">two로 이동</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" @click="loadIframe">two불러오기</a></li>
       </ul>
     </header>
+    <router-view></router-view>
     <iframe id="projectIframe" frameborder="0"></iframe>
   </div>
 </template>
@@ -23,7 +22,6 @@ export default {
   name: 'MyNavbar',
   methods: {
     loadIframe() {
-      // Get the iframe element by its ID
       const iframe = document.getElementById('projectIframe');
       iframe.src = 'http://localhost:8081';
     }
